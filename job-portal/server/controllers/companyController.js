@@ -23,7 +23,6 @@ export const registerCompany = async (req, res) => {
         if (companyExists) {
             return res.json({ success: false, message: 'Company already registered' })
         }
-
         const salt = await bcrypt.genSalt(10)
         const hashPassword = await bcrypt.hash(password, salt)
 
