@@ -51,6 +51,7 @@ export const registerCompany = async (req, res) => {
     }
 }
 
+
 // Login Company
 export const loginCompany = async (req, res) => {
 
